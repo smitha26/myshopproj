@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>The sign up Page</title>
+</head>
+<body>
+    <h1>Please Signup Here</h1>
+    <form ng-submit="controller.save()">
+        <div class="form-group">
+            <!-- <form action="/signup" method="POST"> -->
+            <label>username:</label>
+            <input ng-model="controller.product.username" class="form-control" style="width:400px" /><hr/>
+            <label>password:</label>
+            <input ng-model="controller.product.password" class="form-control" style="width:400px" /><hr/>
+            <button type="submit" class="btn btn-primary">Sign up</button>
+            <!-- <button type="submit">signup</button> -->
+        </div>
+    </form>
+    <p>Already a Member?<p><a href="/login">Login</a>
+    </body>
+
+    </html>

@@ -1,0 +1,21 @@
+ul li{
+
+    width:200px;
+    display:inline-block;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+}
+ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    margin-top: 10px;
+
+}
+ul li a:hover
+{
+    background-color: orange;
+    color:black;
+    text-decoration:none;
+}

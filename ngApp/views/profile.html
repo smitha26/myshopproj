@@ -1,0 +1,20 @@
+<h1>"Welcome to  your Profile Page"</h1>
+<p>Welcome, {{ controller.user.username }}</p>
+<h2>Dress Collections</h2>
+<ul>
+    <li ng-repeat="product in controller.products"><br>
+        <img ng-src="{{product.image}}" style="width:200px;"> {{product.style}} ${{product.price}}<hr>
+        <!-- <p>Shopping-cart icon on a button: -->
+        <button type="button" class="btn btn-default btn-sm">
+            <a href="#" ng-click="controller.addToCart(product)">AddItemtoCart</a>
+            <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart
+        </button>
+        <!-- <a href="/cart/add/<%=productList [i].name %>">Add to Cart</a> -->
+        <!-- </p> -->
+        <!-- <img ng-src="{{todolist.image}}" style="width:300px;"><hr> -->
+        <!-- <a href="/edit/{{product._id}} style="color:black;">edit</a>
+        <a href="#" ng-click="controller.remove(product._id)">delete</a> -->
+    </li>
+</ul>
+
+<a href="/logout">Logout</a>

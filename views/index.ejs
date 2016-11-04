@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app="myshopproj">
+<head>
+    <title>SG ARIZONA WAREHOUSE</title>
+    <meta charset="utf-8">
+    <base href="/" />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/ngApp/css/site.css"/>
+    <link rel="stylesheet" href="/ngApp/css/mystyle.css" type="text/css">
+</head>
+<body>
+    <div class="container dark">
+        <div class="header">
+            <div id="top_left">
+                <img src="/ngApp/css/products/shoppinglady1.jpg" alt="shopping lady" />
+            </div>
+            <div id="top_right">
+                <h1>SG ARIZONA WAREHOUSE</h1>
+            </div>
+            <div id="clear">
+            </div>
+        </div>
+    </div>
+
+    <div class="container light">
+        <div class="header">
+            <div id="navs_left">
+                FREE SHIPPING for any order over $60.
+                <!-- <a href="/">Home</a> /
+                <a href="/newarrivals">NewArrivals</a> /
+                <a href="/bestsellers">BestSellers</a> / -->
+            </div>
+            <div id="navs_right">
+                <form>
+                    <input id="textstyle" type="text" name="textbox"/>
+                    <button class="btn btn-primary">Search</button>
+                </form>
+                <div id="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container dark">
+        <div class="header">
+            <ul>
+                <li id="index"><a href="/">Home</a></li>
+                <li id="index"><a href="/admin">SecureProduct</a></li>
+                <!-- <li id="index"><a href="/bestsellers">BestSellers</a></li> -->
+                <li id="index"><a href="/login">Login</a></li>
+
+
+
+                <!-- <li id="index"><a href="/products">Products</a></li> -->
+                <li id="index"><a href="/cart">Cart</a></li>
+            </ul>
+            <div id="clear"></div>
+        </div>
+    </div>
+
+    <!-- <hr /> -->
+    <div id="body_view">
+        <ui-view></ui-view>
+    </div>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="/bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="/ngApp/app.js"></script>
+    <script src="/ngApp/controllers/controllers.js"></script>
+    <script src="/ngApp/services/services.js"></script>
+
+</body>
+</html>

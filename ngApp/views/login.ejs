@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login Page</title>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form ng-submit="controller.save()">
+            <div class="form-group">
+                <label>USERNAME:</label><br/>
+                <input ng-model=controller.product.username style="width:400px"/><hr/>
+                <label>PASSWORD:</label><br/>
+                <input ng-model=controller.product.password style="width:400px"/><hr/>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+
+    </body>
+</html>

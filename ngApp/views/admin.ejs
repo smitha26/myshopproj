@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <h2 id=producthead>Products Update</h2>
+    <style>
+    ul li a{
+        color:black;
+        text-decoration:none;
+        display:block;
+        margin-top: 10px;
+    }
+    #todoform
+    {
+        margin-left: 100px;
+
+    }
+    #todohead
+    {
+        margin-left: 100px;
+    }
+    </style>
+</head>
+<body>
+    <form id="productform" ng-submit="controller.save()">
+        <div class="form-group">
+            <label>image:</label>
+            <input ng-model="controller.product.image" class="form-control" style="width:400px" />
+        </div>
+        <div class="form-group">
+            <label>style:</label>
+            <input ng-model="controller.product.style" class="form-control" style="width:400px" />
+        </div>
+        <div class="form-group">
+            <label>color:</label>
+            <input ng-model="controller.product.color" class="form-control" style="width:400px" />
+        </div>
+        <div class="form-group">
+            <label>price:</label>
+            <input ng-model="controller.product.price" class="form-control" style="width:400px" />
+        </div>
+        <div>
+        </div>
+        <button class="btn btn-primary">Add item</button>
+
+    </form>
+
+    <div>
+        <ul>
+            <li ng-repeat="product in controller.products"><br>
+                <img ng-src="{{product.image}}" style="width:200px;">, {{product.style}}, {{product.price}}<hr>
+                <!-- <img ng-src="{{todolist.image}}" style="width:300px;"><hr> -->
+                <a href="/edit/{{product._id}}" style="color:black;">edit</a>
+                <a href="#" ng-click="controller.remove(product._id)">delete</a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

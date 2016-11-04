@@ -1,0 +1,24 @@
+<h2>Home</h2>
+<h2>Dress Collections</h2>
+<style>
+#shop
+{
+  color:black;
+}
+</style>
+
+<div>
+    <button ng-click="controller.filterByCategory ('#')">All Dresses</button>
+    <button ng-click="controller.filterByCategory ('#1234')">Summer Dresses</button>
+    <button ng-click="controller.filterByCategory ('#5678')">Winter Dresses</button>
+</div>
+ <ul>
+   <li ng-repeat="product in controller.products"><br>
+     <img ng-src="{{product.image}}" style="width:200px;"><hr>
+     <!-- , {{product.style}}, ${{product.price}}<hr> -->
+        <a id="shop" href="/signup">ShopNow</a>
+       <!-- <button type="button" class="btn btn-default btn-sm">
+        <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart -->
+      </button>
+   </li>
+ </ul>

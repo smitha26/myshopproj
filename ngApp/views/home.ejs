@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>This is the Home Page</h1>
+        <ul>
+          <li ng-repeat="product in controller.products"><br>
+            <img ng-src="{{product.image}}" style="width:200px;"><hr>
+            <!-- , {{product.style}}, ${{product.price}}<hr> -->
+               <a id="shop" href="/signup">ShopNow</a>
+              <!-- <button type="button" class="btn btn-default btn-sm">
+               <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart -->
+             </button>
+          </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Products Page</title>
+    </head>
+    <body>
+        <p>This is my Products Page</p>
+        
+        <h2>Products List</h2>
+            <ul>
+              <li ng-repeat="product in controller.products">
+                {{product.name}}, {{product.price|currency}}<br>
+                <a href="#" ng-click="controller.addToCart(product)">AddItemtoCart</a>
+              </li>
+            </ul>
+    </body>
+</html>

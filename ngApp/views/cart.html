@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Shopping  Cart</title>
+    </head>
+        <body>
+
+                <p>This is my Shopping Cart Page</p>
+                <h2>Shopping Cart</h2>
+                    <ul>
+                       <li ng-repeat="product in controller.products">
+                         {{product.style}}, {{product.price|currency}}<br/>
+                         <a href="#" ng-click="controller.remove($index)">delete</a>
+
+
+                      </li>
+                     <div>
+                      <label>Your Cart Total:</label> {{controller.total}}<br/>
+                      <a href="#/checkout">Proceed to checkout</a>
+                    </div>
+                      <a href="/profile">Continue Shopping</a>
+                    </ul>
+                    <a href="/clearcart" ng-click="controller.clearCart()">Clear your cart</a>
+
+        </body>
+</html>

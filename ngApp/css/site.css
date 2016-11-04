@@ -1,0 +1,51 @@
+<style type="text/css">
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+.container
+{
+  width: 100%;
+}
+
+.dark
+{
+  background-color:#31353d;
+  color: white;
+}
+.light
+{
+  background-color:#e9edf2;
+}
+#top_left{
+   padding: 5px;
+   display:inline-block;
+}
+#top_right{
+  margin-top: 30px;
+  float: right;
+}
+#navs_left{
+  display:inline-block;
+  color:"grey";
+  margin-top: 10px;
+}
+#navs_right {
+    float: right;
+}
+#textstyle{
+  height:25px;
+  border-radius: 8px;
+}
+#clear
+{
+  clear: both;
+}
+#index
+{
+  color:black;
+}
+
+
+ </style>
